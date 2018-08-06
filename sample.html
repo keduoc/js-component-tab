@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tab组件</title>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+        .tab-container{
+            width: 500px;
+            height: 300px;
+            margin: 200px auto;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        li{
+            float: left;
+            list-style: none;
+            background: #f6695c;
+            padding: 2px 5px;
+            border: 1px solid white;
+            cursor: pointer;
+        }
+        .content{
+            border: 1px solid #0FB492;
+            position: absolute;
+            width: 500px;
+            height: 450px;
+            display: none;
+        }
+        .active{
+            background-color: #4CAF50;
+            color:white;
+        }
+        .show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="tab-container">
+    <nav class="clearfix">
+        <li class="active">我是tab1</li>
+        <li>我是tab2</li>
+        <li>我是tab3</li>
+    </nav>
+
+    <div class="content show">
+        1
+    </div>
+    <div class="content">
+        2
+    </div>
+    <div class="content">
+        3
+    </div>
+</div>
+
+<div class="tab-container">
+    <nav class="clearfix">
+        <li class="active">我是tab1</li>
+        <li>我是tab2</li>
+        <li>我是tab3</li>
+    </nav>
+
+    <div class="content show">
+        1
+    </div>
+    <div class="content">
+        2
+    </div>
+    <div class="content">
+        3
+    </div>
+</div>
+<script src="tab.js"></script>
+</body>
+</html>
